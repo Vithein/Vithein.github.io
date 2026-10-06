@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moje portfolio | Student</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigace -->
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#about">O mně</a></li>
+                <li><a href="#skills">Dovednosti</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Úvodní sekce -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="subtitle">Ahoj, jsem</p>
+
+                    <h1>Tvoje <span>jméno</span></h1>
+
+                    <h2>Student & začínající vývojář</h2>
+
+                    <p>
+                        Studuji IT a baví mě tvorba webových stránek,
+                        programování a objevování nových technologií.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">
+                            Moje projekty
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- O mně -->
+        <section id="about" class="section">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>O mně</p>
+                    <h2>Něco málo o mně</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Student se zájmem o IT</h3>
+
+                        <p>
+                            Jsem student, který se zajímá o tvorbu webových
+                            stránek a programování. Ve škole se učím základy
+                            různých technologií a ve volném čase se snažím
+                            své znalosti dále rozvíjet.
+                        </p>
+
+                        <p>
+                            Nemám za sebou roky profesionální praxe, ale
+                            rád se učím nové věci a pracuji na vlastních
+                            projektech.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Dovednosti -->
+        <section id="skills" class="section section-gray">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>Co umím</p>
+                    <h2>Moje dovednosti</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>
+                            Základy tvorby struktury webových stránek.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>
+                            Stylování, layout, Flexbox a responzivní design.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python</h3>
+                        <p>
+                            Základy programování a práce s daty.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>SQL</h3>
+                        <p>
+                            Základy databází a práce s SQL dotazy.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Projekty -->
+        <section id="projects" class="section">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>Moje práce</p>
+                    <h2>Projekty</h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Osobní web</h3>
+
+                            <p>
+                                Jednoduchá webová stránka vytvořená pomocí
+                                HTML a CSS.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <p class="project-note">Odkaz na projekt doplním.</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>To-Do aplikace</h3>
+
+                            <p>
+                                Školní projekt zaměřený na práci s úkoly
+                                a jednoduchým uživatelským rozhraním.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <p class="project-note">Odkaz na projekt doplním.</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Databázový projekt</h3>
+
+                            <p>
+                                Školní projekt zaměřený na návrh databáze
+                                a práci s SQL.
+                            </p>
+
+                            <div class="tags">
+                                <span>SQL</span>
+                                <span>Database</span>
+                            </div>
+
+                            <p class="project-note">Odkaz na projekt doplním.</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Kontakt -->
+        <section id="contact" class="section section-gray">
+            <div class="container contact">
+
+                <div class="section-title">
+                    <p>Kontakt</p>
+                    <h2>Ozvi se mi</h2>
+                </div>
+
+                <p>
+                    Pokud mě chceš kontaktovat, můžeš využít některý
+                    z níže uvedených kontaktů.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:tvuj.email@example.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        tvuj.email@example.com
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Patička -->
+    <footer>
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 Tvoje jméno. Vytvořeno jako studentské portfolio.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:tvuj.email@example.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
