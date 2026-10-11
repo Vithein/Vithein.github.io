@@ -382,6 +382,30 @@ footer {
     font-size: 0.82rem;
 }
 
+.footer-meta {
+    display: grid;
+    gap: 4px;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-meta p {
+    font-size: 0.72rem;
+}
+
+.validation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #8ed0c4;
+    font-size: 0.78rem;
+    text-decoration: none;
+}
+
+.validation-link:hover {
+    color: white;
+}
+
 .social-links {
     display: flex;
     gap: 16px;
