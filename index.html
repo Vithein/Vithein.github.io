@@ -1,327 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Moje portfolio | vit heinzke</title>
-
-    <!-- Google Font -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta
+      name="description"
+      content="Osobní portfolio webového vývojáře. Proměňuji nápady v rychlé, přístupné a promyšlené weby."
+    >
+    <title>Jméno Příjmení — webový vývojář</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Vlastní CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Navigace -->
-    <header>
-        <nav class="navbar container">
-            <a href="#home" class="logo">Portfolio<span>.</span></a>
-
-            <ul class="nav-links">
-                <li><a href="#about">O mně</a></li>
-                <li><a href="#skills">Dovednosti</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <aside class="project-notice" aria-label="Upozornění na školní projekt">
+      <span>Školní projekt · Fiktivní portfolio, ukázky ani nabídka služeb nejsou skutečné.</span>
+      <a href="informace.html">Informace o projektu <span aria-hidden="true">↗</span></a>
+    </aside>
+    <header class="site-header">
+      <a class="wordmark" href="#domu" aria-label="Jméno Příjmení, domů">JP<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace">
+        <a href="#o-mne">O mně</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="nav-cta" href="#kontakt">Pojďme spolupracovat <span aria-hidden="true">↗</span></a>
+      </nav>
     </header>
 
-
     <main>
+      <section class="hero section-wrap" id="domu" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Webový vývojář · Česká republika</p>
+          <h1 id="hero-title">Stavím weby,<br>které <span class="accent-word">dávají smysl.</span></h1>
+          <p class="hero-intro">
+            Jsem <strong>Jméno Příjmení</strong> — vývojář, který propojuje čistý kód,
+            promyšlený design a příjemný uživatelský zážitek.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projekty">Prohlédnout projekty <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#kontakt">Ozvat se <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">✳</span> Otevřený/á novým projektům</p>
+        </div>
 
-        <!-- Úvodní sekce -->
-        <section id="home" class="hero">
-            <div class="container hero-content">
-
-                <div class="hero-text">
-                    <p class="subtitle">Ahoj, jsem</p>
-
-                    <h1>vit <span>heinzke</span></h1>
-
-                    <h2>Student & začínající vývojář</h2>
-
-                    <p>
-                        Studuji IT a baví mě tvorba webových stránek,
-                        programování a objevování nových technologií.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn">
-                            Moje projekty
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            Kontakt
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hero-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card">
+            <div class="code-top"><span></span><span></span><span></span><i>portfolio.tsx</i></div>
+            <div class="code-lines">
+              <p><span class="code-muted">01</span> <span class="code-purple">const</span> web = {</p>
+              <p><span class="code-muted">02</span> &nbsp; nápad: <span class="code-green">"váš"</span>,</p>
+              <p><span class="code-muted">03</span> &nbsp; provedení: <span class="code-green">"poctivé"</span>,</p>
+              <p><span class="code-muted">04</span> &nbsp; výsledek: <span class="code-yellow">"funkční"</span></p>
+              <p><span class="code-muted">05</span> };</p>
             </div>
-        </section>
+            <div class="code-footer"><span class="status-dot"></span> připraveno ke spuštění</div>
+          </div>
+          <span class="art-sticker">Less noise.<br>More meaning.</span>
+          <span class="art-cross cross-one">✳</span>
+          <span class="art-cross cross-two">✳</span>
+          <span class="art-caption">Kód s rozmyslem<br>od prvního řádku.</span>
+        </div>
+        <a class="scroll-cue" href="#o-mne" aria-label="Přejít na sekci O mně"><span></span> Scroll pro víc</a>
+      </section>
 
+      <section class="about section-wrap section-space" id="o-mne" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / O mně</p>
+          <h2 id="about-title">Dobrý web začíná<br><span class="serif-accent">dobrou otázkou.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">
+            Nejdřív poslouchám. Pak navrhuji a tvořím digitální zážitky,
+            které jsou srozumitelné lidem a spolehlivé pod kapotou.
+          </p>
+          <p class="about-text">
+            Jako webový vývojář pomáhám převést nápady do podoby, která dobře funguje
+            na každém zařízení. Záleží mi na rychlosti, přístupnosti a detailech —
+            protože právě ty dělají z dobrého webu skvělý.
+          </p>
+          <div class="skills" aria-label="Technologie a dovednosti">
+            <span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>Responzivní design</span><span>Přístupnost</span>
+          </div>
+        </div>
+      </section>
 
-        <!-- O mně -->
-        <section id="about" class="section">
-            <div class="container">
-
-                <div class="section-title">
-                    <p>O mně</p>
-                    <h2>Něco málo o mně</h2>
-                </div>
-
-                <div class="about-content">
-
-                    <div class="about-icon">
-                        <i class="fa-solid fa-user-graduate"></i>
-                    </div>
-
-                    <div class="about-text">
-                        <h3>Student se zájmem o IT</h3>
-
-                        <p>
-                            Jsem student, který se zajímá o tvorbu webových
-                            stránek a programování. Ve škole se učím základy
-                            různých technologií a ve volném čase se snažím
-                            své znalosti dále rozvíjet.
-                        </p>
-
-                        <p>
-                            Nemám za sebou roky profesionální praxe, ale
-                            rád se učím nové věci a pracuji na vlastních
-                            projektech.
-                        </p>
-                    </div>
-
-                </div>
-
+      <section class="projects section-space" id="projekty" aria-labelledby="projects-title">
+        <div class="section-wrap">
+          <div class="projects-heading">
+            <div class="section-heading">
+              <p class="eyebrow">02 / Vybraná práce</p>
+              <h2 id="projects-title">Nápady v pohybu<span class="accent-word">.</span></h2>
             </div>
-        </section>
-
-
-        <!-- Dovednosti -->
-        <section id="skills" class="section section-gray">
-            <div class="container">
-
-                <div class="section-title">
-                    <p>Co umím</p>
-                    <h2>Moje dovednosti</h2>
+            <p class="projects-intro">Pár ukázkových konceptů, které ukazují, jak přemýšlím nad webem.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-card-large">
+              <div class="project-visual visual-studio" aria-hidden="true">
+                <div class="studio-window">
+                  <div class="window-bar"><span></span><span></span><span></span><b>atelier.studio</b></div>
+                  <div class="studio-content">
+                    <span class="mock-label">ATELIÉR / 2025</span>
+                    <span class="mock-heading">Méně věcí.<br>Více příběhů.</span>
+                    <span class="mock-button">Prozkoumat kolekci ↗</span>
+                  </div>
+                  <div class="studio-shape"></div>
                 </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <i class="fa-brands fa-html5"></i>
-                        <h3>HTML</h3>
-                        <p>
-                            Základy tvorby struktury webových stránek.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                        <p>
-                            Stylování, layout, Flexbox a responzivní design.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Python</h3>
-                        <p>
-                            Základy programování a práce s daty.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-solid fa-database"></i>
-                        <h3>SQL</h3>
-                        <p>
-                            Základy databází a práce s SQL dotazy.
-                        </p>
-                    </div>
-
+                <span class="visual-index">A—01</span>
+              </div>
+              <div class="project-info">
+                <div><h3>Ateliér Forma</h3><p>Koncept e-shopu pro lokální design</p></div>
+                <span class="project-type">01 / E-commerce</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual visual-finance" aria-hidden="true">
+                <div class="finance-window">
+                  <span class="mock-label">VAŠE FINANCE PŘEHLEDNĚ</span>
+                  <span class="finance-balance">42 580 <small>Kč</small></span>
+                  <span class="finance-caption">Celkový zůstatek <i>+12,8 %</i></span>
+                  <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <span class="visual-index">B—02</span>
                 </div>
-
-            </div>
-        </section>
-
-
-        <!-- Projekty -->
-        <section id="projects" class="section">
-            <div class="container">
-
-                <div class="section-title">
-                    <p>Moje práce</p>
-                    <h2>Projekty</h2>
+              </div>
+              <div class="project-info">
+                <div><h3>Klidné finance</h3><p>Koncept přehledné finanční aplikace</p></div>
+                <span class="project-type">02 / Web app</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual visual-nature" aria-hidden="true">
+                <div class="nature-frame">
+                  <span class="nature-overline">MÍSTO PRO ZPOMALENÍ</span>
+                  <span class="nature-title">Najdi si<br>svůj směr.</span>
+                  <span class="nature-action">Objevte stezky <b>↗</b></span>
+                  <span class="nature-sun"></span>
+                  <span class="visual-index">C—03</span>
                 </div>
+              </div>
+              <div class="project-info">
+                <div><h3>Venku blíž</h3><p>Koncept průvodce výlety v přírodě</p></div>
+                <span class="project-type">03 / Landing page</span>
+              </div>
+            </article>
+          </div>
+          <p class="projects-disclaimer">Ukázkové koncepty pro toto portfolio — nejde o klientské realizace.</p>
+        </div>
+      </section>
 
-                <div class="projects-grid">
+      <section class="process section-wrap section-space" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Jak pracuji</p>
+          <h2 id="process-title">Jasný proces.<br><span class="serif-accent">Žádná magie.</span></h2>
+        </div>
+        <div class="process-list">
+          <article class="process-item"><span class="process-number">01</span><div><h3>Nejdřív si povídáme</h3><p>Pochopím vaše cíle, publikum i to, co má web skutečně vyřešit.</p></div><span class="process-symbol">↗</span></article>
+          <article class="process-item"><span class="process-number">02</span><div><h3>Navrhnu cestu</h3><p>Společně vybereme srozumitelný směr a doladíme důležité detaily.</p></div><span class="process-symbol">↗</span></article>
+          <article class="process-item"><span class="process-number">03</span><div><h3>Postavím a předám</h3><p>Dodám přístupný, rychlý web a vysvětlím, jak s ním dál pracovat.</p></div><span class="process-symbol">↗</span></article>
+        </div>
+      </section>
 
-                    <article class="project-card">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-
-                        <div class="project-content">
-                            <h3>Osobní web</h3>
-
-                            <p>
-                                Jednoduchá webová stránka vytvořená pomocí
-                                HTML a CSS.
-                            </p>
-
-                            <div class="tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-
-                            <p class="project-note">Odkaz na projekt doplním.</p>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-list-check"></i>
-                        </div>
-
-                        <div class="project-content">
-                            <h3>To-Do aplikace</h3>
-
-                            <p>
-                                Školní projekt zaměřený na práci s úkoly
-                                a jednoduchým uživatelským rozhraním.
-                            </p>
-
-                            <div class="tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-
-                            <p class="project-note">Odkaz na projekt doplním.</p>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-
-                        <div class="project-content">
-                            <h3>Databázový projekt</h3>
-
-                            <p>
-                                Školní projekt zaměřený na návrh databáze
-                                a práci s SQL.
-                            </p>
-
-                            <div class="tags">
-                                <span>SQL</span>
-                                <span>Database</span>
-                            </div>
-
-                            <p class="project-note">Odkaz na projekt doplním.</p>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Kontakt -->
-        <section id="contact" class="section section-gray">
-            <div class="container contact">
-
-                <div class="section-title">
-                    <p>Kontakt</p>
-                    <h2>Ozvi se mi</h2>
-                </div>
-
-                <p>
-                    Pokud mě chceš kontaktovat, můžeš využít některý
-                    z níže uvedených kontaktů.
-                </p>
-
-                <div class="contact-links">
-
-                    <a href="mailto:tvuj.email@example.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        tvuj.email@example.com
-                    </a>
-
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                        GitHub
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
+      <section class="contact section-wrap" id="kontakt" aria-labelledby="contact-title">
+        <p class="eyebrow">04 / Váš další krok</p>
+        <h2 id="contact-title">Máte nápad?<br><span class="serif-accent">Pojďme ho oživit.</span></h2>
+        <p class="contact-copy">Napište mi pár řádků o projektu. Ozvu se a probereme, co dál.</p>
+        <a class="button button-light" href="mailto:ahoj@example.cz">ahoj@example.cz <span aria-hidden="true">↗</span></a>
+        <div class="contact-decoration" aria-hidden="true">✳</div>
+        <p class="contact-note">Nahraďte tuto ukázkovou adresu svým e-mailem.</p>
+      </section>
     </main>
 
-
-    <!-- Patička -->
-    <footer>
-        <div class="container footer-content">
-            <p>
-                &copy; 2026 Tvoje jméno. Vytvořeno jako studentské portfolio.
-            </p>
-
-            <div class="footer-meta">
-                <p>
-                    AI citace: ChatGPT — zadání: „portfolio page green and white colors for web developers“
-                </p>
-                <a class="validation-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvithein.github.io%2F" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                    Validace HTML
-                </a>
-            </div>
-
-            <div class="social-links">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:tvuj.email@example.com" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-        </div>
+    <footer class="site-footer">
+      <a class="wordmark" href="#domu" aria-label="Jméno Příjmení, nahoru">JP<span>.</span></a>
+      <p>Navrženo s péčí. Napsáno s rozmyslem.</p>
+      <a class="footer-top" href="#domu">Zpět nahoru ↑</a>
+      <span class="footer-credit">© 2026 Jméno Příjmení</span>
+      <div class="footer-resources">
+        <a href="CITACE-AI.md">Citace využití AI ↗</a>
+        <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">Validátor HTML (W3C) ↗</a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
