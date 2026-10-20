@@ -1347,3 +1347,373 @@ h2 {
     transition-duration: 0.01ms !important;
   }
 }
+
+:root {
+  color-scheme: dark;
+  --paper: #10151b;
+  --ink: #e6e9e8;
+  --muted: #a0abb1;
+  --line: #303a42;
+  --lime: #bfd5c7;
+  --purple: #a5c7cc;
+  --mono: "DM Mono", monospace;
+  --sans: "Manrope", sans-serif;
+  --moonlight: #d7ded8;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgb(73 94 108 / 18%), transparent 42rem),
+    radial-gradient(1px 1px at 12% 18%, rgb(220 232 231 / 48%) 50%, transparent 100%),
+    radial-gradient(1px 1px at 79% 25%, rgb(220 232 231 / 38%) 50%, transparent 100%),
+    radial-gradient(1px 1px at 63% 61%, rgb(220 232 231 / 28%) 50%, transparent 100%),
+    radial-gradient(1px 1px at 27% 72%, rgb(220 232 231 / 30%) 50%, transparent 100%),
+    #10151b;
+  background-attachment: fixed;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline-color: var(--lime);
+}
+
+.project-notice {
+  background: #090d11;
+  color: #c0c8c9;
+}
+
+.project-notice a,
+.wordmark span,
+.accent-word,
+.process-number {
+  color: var(--lime);
+}
+
+.project-notice a:focus-visible {
+  outline-color: var(--lime);
+}
+
+.site-header {
+  border-color: var(--line);
+}
+
+.wordmark {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 31px;
+  letter-spacing: -0.06em;
+}
+
+.main-nav a:not(.nav-cta):hover,
+.footer-top:hover,
+.footer-resources a:hover {
+  color: var(--lime);
+}
+
+.nav-cta {
+  border-color: #66747a;
+}
+
+.nav-cta:hover,
+.button-dark {
+  color: #11171c;
+  background: #d3ddd7;
+}
+
+.button-dark:hover {
+  background: #e5ebe6;
+}
+
+h1,
+h2,
+.section-heading h2,
+.projects-heading h2,
+.contact h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.hero h1 {
+  font-size: clamp(58px, 7vw, 92px);
+  line-height: 0.93;
+}
+
+.hero .accent-word,
+.serif-accent {
+  color: #b8ceca;
+}
+
+.serif-accent {
+  font-style: italic;
+}
+
+.status-dot {
+  background: #a8c7b5;
+  box-shadow: 0 0 12px rgb(168 199 181 / 55%);
+}
+
+.hero-note span,
+.cross-two {
+  color: #b9c9ac;
+}
+
+.hero-art {
+  isolation: isolate;
+}
+
+.hero-art::before {
+  position: absolute;
+  z-index: -1;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(154 191 199 / 16%), rgb(154 191 199 / 4%) 48%, transparent 72%);
+  content: "";
+}
+
+.hero-art::after {
+  position: absolute;
+  z-index: -1;
+  right: -5%;
+  bottom: 14%;
+  left: -5%;
+  height: 25%;
+  background: #182129;
+  clip-path: polygon(
+    0 100%, 0 67%, 6% 74%, 11% 32%, 14% 73%, 19% 62%,
+    23% 18%, 27% 68%, 33% 51%, 38% 78%, 43% 38%, 48% 72%,
+    53% 58%, 59% 25%, 63% 73%, 69% 49%, 75% 79%, 81% 35%,
+    85% 72%, 91% 53%, 96% 17%, 100% 65%, 100% 100%
+  );
+  opacity: 0.8;
+  content: "";
+}
+
+.art-orbit {
+  border-color: rgb(176 197 201 / 13%);
+}
+
+.art-sun {
+  border: 1px solid rgb(232 238 225 / 70%);
+  background: radial-gradient(circle at 35% 35%, #eef0dd, #aebdb5 70%);
+  box-shadow: 0 0 38px rgb(207 223 211 / 22%);
+}
+
+.art-card {
+  border-color: #53616a;
+  border-radius: 3px;
+  background: #182129;
+  box-shadow: 0 28px 74px rgb(0 0 0 / 46%), 0 0 32px rgb(141 176 184 / 10%);
+}
+
+.code-top,
+.code-footer {
+  border-color: #34414a;
+}
+
+.code-purple {
+  color: #c8b6d7;
+}
+
+.code-green {
+  color: #b8d3b9;
+}
+
+.code-yellow {
+  color: #d7c69a;
+}
+
+.art-sticker {
+  width: 106px;
+  height: 106px;
+  border: 1px solid rgb(221 231 223 / 40%);
+  background: #7b9694;
+  color: #f5f3e9;
+  box-shadow: 0 0 28px rgb(141 183 181 / 18%);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.art-cross {
+  color: #bdc9b4;
+  text-shadow: 0 0 14px rgb(189 201 180 / 65%);
+}
+
+.art-caption,
+.scroll-cue {
+  color: #9da9ad;
+}
+
+.scroll-cue span {
+  background: var(--lime);
+}
+
+.about {
+  border-color: var(--line);
+}
+
+.about-lead {
+  color: #d7dfdc;
+}
+
+.skills span {
+  border-color: #3b474d;
+  color: #c1ccca;
+}
+
+.projects {
+  background: #151c23;
+}
+
+.visual-studio {
+  background: #26343d;
+}
+
+.studio-window {
+  background: #1b252d;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 28%);
+}
+
+.window-bar {
+  border-color: #34414a;
+}
+
+.window-bar > span {
+  background: #617178;
+}
+
+.window-bar b,
+.mock-label,
+.studio-content .mock-button,
+.visual-studio .visual-index {
+  color: #a5b1ae;
+}
+
+.mock-heading {
+  color: #e1e5dd;
+}
+
+.studio-shape {
+  background: #536f6d;
+  opacity: 0.65;
+}
+
+.visual-finance {
+  background: #18252d;
+}
+
+.finance-window {
+  border-color: #4b6167;
+  background: #202f37;
+  box-shadow: 0 17px 38px rgb(0 0 0 / 30%);
+}
+
+.finance-caption i,
+.chart-bars i {
+  color: #bfd5c7;
+}
+
+.chart-bars i {
+  background: #9dbbb1;
+}
+
+.visual-nature {
+  background: #293b3a;
+}
+
+.nature-frame {
+  background: #3f5c55;
+}
+
+.nature-frame::before {
+  background: #748c79;
+}
+
+.nature-frame::after {
+  background: #293c3b;
+}
+
+.nature-sun {
+  background: #d2c9a5;
+  box-shadow: 0 0 24px rgb(210 201 165 / 32%);
+}
+
+.project-info h3 {
+  color: #e1e5e2;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.process-item,
+.process-item:first-child {
+  border-color: var(--line);
+}
+
+.process-item h3 {
+  color: #dce2df;
+}
+
+.process-symbol {
+  color: #a9b8b6;
+}
+
+.contact {
+  border: 1px solid #465a60;
+  background:
+    radial-gradient(ellipse at 82% 50%, rgb(87 121 124 / 28%), transparent 48%),
+    #182129;
+}
+
+.contact .serif-accent {
+  color: #c1d5c8;
+}
+
+.button-light {
+  color: #172027;
+  background: #d1ded5;
+}
+
+.button-light:hover {
+  background: #e3ebe5;
+}
+
+.contact-decoration {
+  color: rgb(178 201 191 / 7%);
+}
+
+.site-footer > p,
+.footer-credit,
+.footer-top {
+  color: #a0abb1;
+}
+
+.footer-resources {
+  border-color: var(--line);
+}
+
+.main-nav.is-open {
+  background: #10151b;
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: clamp(54px, 11vw, 76px);
+  }
+
+  .main-nav {
+    background: #10151b;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: clamp(48px, 12vw, 62px);
+  }
+}
