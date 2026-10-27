@@ -15,3 +15,9 @@ OpenAI. (2026, 13. října). *ChatGPT — návrh jednostránkového portfolia we
 **Rozsah použití:** návrh textů, struktury, vizuálního stylu a implementace stránky.
 
 *Jde o záznam této konverzace, nikoli o veřejný odkaz na její úplný přepis.*
+
+## Další využití AI
+
+**Datum:** 25. října 2026
+**Nástroj:** GitHub Copilot v prostředí Visual Studio Code
+**Rozsah použití:** přepracování stránky projektu na neoficiální fanouškovskou prezentaci hry Hollow Knight, návrh původních českých textů a responzivního rozvržení a propojení stránky s kartou projektu v portfoliu.

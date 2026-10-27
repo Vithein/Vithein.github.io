@@ -288,6 +288,17 @@ header {
     padding: 22px;
 }
 
+.project-card-link {
+    text-decoration: none;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.project-card-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+    box-shadow: 0 16px 36px rgb(24 43 58 / 12%);
+}
+
 .project-icon {
     display: grid;
     width: 42px;
